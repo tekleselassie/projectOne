@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+  body {
+    background: linear-gradient(-45deg, transparent 25%, rgba(0,0,0,0.3) 75%, transparent 75%, rgba(0,0,0,0.3) 25%,transparent 76%, rgba(0,0,0,0.3)) fixed;
+		background: -webkit-linear-gradient(-45deg, transparent 25%, rgba(0,0,0,0.3) 75%, transparent 75%, rgba(0,0,0,0.3) 25%,transparent 76%, rgba(0,0,0,0.3)) fixed;
+  background: -moz-linear-gradient(-45deg, transparent 25%, rgba(0,0,0,0.3) 75%, transparent 75%, rgba(0,0,0,0.3) 25%,transparent 76%, rgba(0,0,0,0.3)) fixed;
+  background: -ms-linear-gradient(-45deg, transparent 25%, rgba(0,0,0,0.3) 75%, transparent 75%, rgba(0,0,0,0.3) 25%,transparent 76%, rgba(0,0,0,0.3)) fixed;
+	}
+	ul.menu {
+		font: bold 1em 'Open sans',sans-serif;
+		color: white;
+		list-style: none;
+		padding: 0;
+		border: none;
+		margin: 1em auto;
+	}
+	ul.menu li {
+		transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+		display: inline-block;
+		background: rgb(150,60,25);
+		opacity: 0.7;
+		padding: 1em;
+		border: none;
+		-webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    border-radius: 10%;
+		-webkit-box-shadow: 0 0.2em 0.5em grey;
+    -moz-box-shadow: 0 0.2em 0.5em grey;
+    box-shadow: 0 0.2em 0.5em grey;
+	}
+	ul.menu:hover li {
+		opacity: 0.5;
+	}
+	ul.menu li:hover {
+		cursor: pointer;
+		opacity: 1;
+		-webkit-border-radius: 0%;
+		-moz-border-radius: 0%;
+		border-radius: 0%;
+    -webkit-box-shadow: 0 0 0.5em 0.1em maroon;
+    -moz-box-shadow: 0 0 0.5em 0.1em maroon;
+    box-shadow: 0 0 0.5em 0.1em maroon;
+	}
+	ul.menu li a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+/*  Responsive coding :)  */
+  @media (max-width: 29em)
+  {
+    ul.menu li {
+      display: block;
+    }
+    ul.menu li {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      margin: 0.3em 0;
+    }
+  }
+
+.km {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+.km a {
+    color: rgb(150,60,25);
+    text-decoration: none;
+    border-bottom: 0.1em solid;
+}
